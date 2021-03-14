@@ -42,32 +42,36 @@
                                         </subviews>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="behealthyv2" translatesAutoresizingMaskIntoConstraints="NO" id="p23-x3-vVi">
-                                        <rect key="frame" x="0.0" y="48" width="428" height="277"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your BMI is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkL-VE-z5w">
-                                        <rect key="frame" x="0.0" y="472" width="428" height="723"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="k2B-em-9sU" userLabel="photo">
+                                        <rect key="frame" x="0.0" y="50" width="428" height="762"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="behealthyv2" translatesAutoresizingMaskIntoConstraints="NO" id="p23-x3-vVi">
+                                                <rect key="frame" x="0.0" y="0.0" width="428" height="721.66666666666663"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your BMI is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkL-VE-z5w">
+                                                <rect key="frame" x="171.66666666666666" y="741.66666666666663" width="84.666666666666657" height="20.333333333333371"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="AkL-VE-z5w" firstAttribute="centerX" secondItem="k2B-em-9sU" secondAttribute="centerX" id="3HD-4v-89S"/>
+                                            <constraint firstItem="AkL-VE-z5w" firstAttribute="top" secondItem="p23-x3-vVi" secondAttribute="bottom" constant="20" id="OAc-Gi-xiq"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="AkL-VE-z5w" firstAttribute="top" secondItem="6mO-Pu-fPS" secondAttribute="bottom" constant="-420" id="2g8-EO-jbT"/>
-                                    <constraint firstAttribute="trailing" secondItem="p23-x3-vVi" secondAttribute="trailing" id="D49-Xn-e1Y"/>
+                                    <constraint firstItem="k2B-em-9sU" firstAttribute="centerX" secondItem="zId-wc-HfA" secondAttribute="centerX" id="7Lc-hU-1Yv"/>
                                     <constraint firstAttribute="bottom" secondItem="6mO-Pu-fPS" secondAttribute="bottom" constant="50" id="E5f-em-3Dj"/>
+                                    <constraint firstItem="k2B-em-9sU" firstAttribute="top" secondItem="zId-wc-HfA" secondAttribute="top" constant="50" id="GUp-oY-Q5J"/>
                                     <constraint firstItem="6mO-Pu-fPS" firstAttribute="leading" secondItem="zId-wc-HfA" secondAttribute="leading" constant="30" id="Hfh-hY-hSq"/>
-                                    <constraint firstAttribute="trailing" secondItem="AkL-VE-z5w" secondAttribute="trailing" id="JHE-fG-DGW"/>
-                                    <constraint firstAttribute="bottom" secondItem="AkL-VE-z5w" secondAttribute="bottom" constant="-253" id="KtP-Qc-wh0"/>
-                                    <constraint firstItem="p23-x3-vVi" firstAttribute="top" secondItem="zId-wc-HfA" secondAttribute="top" constant="48" id="Q3w-cd-BDR"/>
+                                    <constraint firstAttribute="trailing" secondItem="k2B-em-9sU" secondAttribute="trailing" id="ReT-GU-xKX"/>
                                     <constraint firstAttribute="trailing" secondItem="6mO-Pu-fPS" secondAttribute="trailing" constant="30" id="V17-SZ-ZdO"/>
-                                    <constraint firstItem="AkL-VE-z5w" firstAttribute="leading" secondItem="zId-wc-HfA" secondAttribute="leading" id="ZMC-D4-CsG"/>
-                                    <constraint firstAttribute="top" secondItem="p23-x3-vVi" secondAttribute="bottom" constant="-325" id="aGf-ya-sDq"/>
-                                    <constraint firstItem="AkL-VE-z5w" firstAttribute="centerX" secondItem="zId-wc-HfA" secondAttribute="centerX" id="csl-4y-mWw"/>
-                                    <constraint firstItem="p23-x3-vVi" firstAttribute="leading" secondItem="zId-wc-HfA" secondAttribute="leading" id="iAL-Lm-Ic3"/>
+                                    <constraint firstItem="k2B-em-9sU" firstAttribute="leading" secondItem="zId-wc-HfA" secondAttribute="leading" id="d6Y-th-A7A"/>
+                                    <constraint firstAttribute="bottom" secondItem="k2B-em-9sU" secondAttribute="bottom" constant="130" id="j0m-mx-2oL"/>
                                     <constraint firstItem="6mO-Pu-fPS" firstAttribute="centerX" secondItem="zId-wc-HfA" secondAttribute="centerX" id="nei-RT-Kvh"/>
-                                    <constraint firstItem="p23-x3-vVi" firstAttribute="centerX" secondItem="zId-wc-HfA" secondAttribute="centerX" id="ooy-si-zbU"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -83,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-662.31884057971024" y="-25.446428571428569"/>
+            <point key="canvasLocation" x="-663.08411214953264" y="-25.917926565874733"/>
         </scene>
     </scenes>
     <resources>
