@@ -39,7 +39,7 @@
                                                     <color key="titleColor" red="0.0539169704" green="0.057666508839999998" blue="0.05149462028" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="bmiCalculator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H5b-YQ-TbS"/>
+                                                    <action selector="calculateBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9At-pZ-7kp"/>
                                                 </connections>
                                             </button>
                                         </subviews>

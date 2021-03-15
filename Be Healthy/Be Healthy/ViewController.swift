@@ -18,7 +18,14 @@ class ViewController: UIViewController {
         outPutLabel.text = "To check your BMI please add your data"
     }
 
-    @IBAction func bmiCalculator(_ sender: Any) {
+    
+    
+
+    @IBAction func calculateBtn(_ sender: Any) {
+            bmiCalculator()
+    }
+    
+    func bmiCalculator() {
         let height = Double(heightInput.text!)!
         let weight = Double(weightInput.text!)!
 
