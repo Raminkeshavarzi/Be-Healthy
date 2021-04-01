@@ -31,9 +31,9 @@ class ViewController: UIViewController {
 
 //calculation
         let bmi = Double(weight / (height * height))
-        let bodyMassIndex = Double(round(1000 * bmi)/1000)
+        let bodyMassIndex = Double(round(10 * bmi)/10)
 //rendering result
-        outPutLabel.text = "Your BMI is\(bodyMassIndex)"
+        outPutLabel.text = "Your BMI is \(bodyMassIndex)"
     }
     
 }
